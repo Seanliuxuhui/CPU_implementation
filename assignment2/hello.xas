@@ -1,0 +1,39 @@
+
+ loadi 1, r1
+ loadi 2, r2
+ loadi 3, r3
+ loadi 4, r4
+ loadi 5, r5
+ loadi 6, r6
+ loadi 7, r7
+ loadi 8, r8
+ loadi 9, r9
+ loadi 10, r10
+ loadi 11, r11
+ loadi 12, r12
+ loadi 13, r13
+ loadi 14, r14
+
+loop:
+  loadi 88, r0
+  out r0
+  loadi 105, r0
+  sub r1, r0
+  sub r2, r0
+  sub r3, r0
+  sub r4, r0
+  sub r5, r0
+  sub r6, r0
+  sub r7, r0
+  sub r8, r0
+  sub r9, r0
+  sub r10, r0
+  sub r11, r0
+  sub r12, r0
+  sub r13, r0
+  sub r14, r0
+  test r0, r0 
+  br done
+  jr loop
+done:
+.literal 0

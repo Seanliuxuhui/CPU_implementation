@@ -1,0 +1,11 @@
+ #test.10.xas test equ operation, test mov operation, test cmp instruction
+ std
+ loadi 0x0001, r1
+ loadi 0x0002, r2
+ mov r1, r3
+ mov r2, r4
+ equ r3, r4
+ cmp r1, r1
+ cmp r1, r2
+ equ r3, r4
+ 

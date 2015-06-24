@@ -1,0 +1,39 @@
+#this test file will is directed from our professor to test the interrupt #implementation.
+###############################################################################
+# test the interrupt generation and ignore it if interrupts are disable.
+#############
+
+  loadi tmp_stack, r15 # setup temporary stack 
+
+  loadi int_tab, r0    # load location of interrupt table
+  lit r0               # set it into interrupt table register
+
+  loadi int_hdlr, r1   # set the interrupt handler
+  stor  r1, r0         # 
+
+  sti                  # disable interrupts
+
+  loadi 1000, r0       # spin for 1000 cycles
+wait:
+  dec   r0             # dec counter
+  test  r0, r0         # test if counter is 0
+  br    wait           # loop if not
+
+  std                  # enable debugging to generate final output.
+  or   r0, r0          # no op
+.literal 0             # stop
+
+###############################################################################
+# Interrupt Handler, should turn on debugging, do a noop, and iret
+##############
+int_hdlr:              # 
+  std                  # set debug on
+  and   r0, r0         # noop
+  iret                 # this should restore state and turn debug off
+.literal 0
+
+.words 5
+tmp_stack:
+
+int_tab:
+  .words 4

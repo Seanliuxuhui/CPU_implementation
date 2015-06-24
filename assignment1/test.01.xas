@@ -1,0 +1,16 @@
+ #test.01.xas file. It is used to test addition operation
+ std
+ loadi Stack, r15
+ loadi num1, r0
+ loadi num2, r1
+ load  r0, r2
+ load  r1, r3
+ add   r2, r3
+
+
+Stack:
+num1:
+.literal 1
+num2:
+.literal 2
+

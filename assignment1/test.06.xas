@@ -1,0 +1,31 @@
+ #test.06.xas print out my name
+ loadi Stack, r15
+ call printName
+ loadi printName, r0
+ callr r0
+
+.literal 0
+printName:
+ loadi 0x58, r0
+ out r0
+ loadi 0x55, r0
+ out r0
+ loadi  0x48, r0
+ out r0
+ loadi 0x55, r0
+ out r0
+ loadi 0x49, r0
+ out r0
+ loadi 0x0a, r0
+ out r0
+ loadi 0x4c, r0
+ out r0
+ loadi 0x49, r0
+ out r0
+ loadi 0x55, r0
+ out r0
+ ret
+
+.literal 0
+.words 512
+Stack: 

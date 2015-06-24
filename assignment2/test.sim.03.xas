@@ -1,0 +1,12 @@
+ # test.sim.03.xas test equ operation, test mov operation, test cmp instruction
+ std
+ loadi 0x0001, r1
+ loadi 0x0002, r2
+ mov r1, r4
+ mov r2, r5
+ mov r5, r3
+ equ r3, r4
+ cmp r1, r1
+ cmp r1, r2
+ equ r3, r4
+ 

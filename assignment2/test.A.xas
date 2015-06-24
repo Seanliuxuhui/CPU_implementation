@@ -1,0 +1,39 @@
+#test.A.xas has basic idea as the yello.xas implementation
+loadi 111, r1
+ loadi 122, r2
+ loadi 133, r3
+ loadi 143, r4
+ loadi 153, r5
+ loadi 163, r6
+ loadi 173, r7
+ loadi 183, r8
+ loadi 193, r9
+ loadi 203, r10
+ loadi 213, r11
+ loadi 223, r12
+ loadi 233, r13
+ loadi 243, r14
+
+loop:
+  loadi 89, r0
+  out r0
+  loadi 245, r0
+  sub r1, r0
+  sub r2, r0
+  sub r3, r0
+  sub r4, r0
+  sub r5, r0
+  sub r6, r0
+  sub r7, r0
+  sub r8, r0
+  sub r9, r0
+  sub r10, r0
+  sub r11, r0
+  sub r12, r0
+  sub r13, r0
+  sub r14, r0
+  test r0, r0 
+  br done
+  jr loop
+done:
+.literal 0

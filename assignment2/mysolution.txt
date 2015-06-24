@@ -1,0 +1,144 @@
+r1:11013	, r2:148040640	, op:00d8	, pc:0	
+PC: 0002, State: 0002: Registers:
+ 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+loadi 24, r0
+r1:0	, r2:0	, op:0003	, pc:2	
+PC: 0006, State: 0002: Registers:
+ 0018 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000
+push r0
+r1:0	, r2:0	, op:00e1	, pc:6	
+PC: 0008, State: 0002: Registers:
+ 0018 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 fffe
+trap 
+r1:0	, r2:0	, op:0043	, pc:8	
+c->itr :0
+c->memory[ 0] = 3 
+c->memory[ 1] = 0 
+c->memory[ 2] = 225 
+c->memory[ 3] = 0 
+c->memory[ 4] = 0 
+c->memory[ 5] = 24 
+c->memory[ 6] = 67 
+c->memory[ 7] = 0 
+c->memory[ 8] = 7 
+c->memory[ 9] = 0 
+c->memory[ 10] = 225 
+c->memory[ 11] = 0 
+c->memory[ 12] = 3 
+c->memory[ 13] = 232 
+c->memory[ 14] = 73 
+c->memory[ 15] = 0 
+c->memory[ 16] = 138 
+c->memory[ 17] = 0 
+c->memory[ 18] = 97 
+c->memory[ 19] = 252 
+c->memory[ 20] = 98 
+c->memory[ 21] = 244 
+c->memory[ 22] = 0 
+c->memory[ 23] = 0 
+c->memory[ 24] = 72 
+c->memory[ 25] = 0 
+c->memory[ 26] = 0 
+c->memory[ 27] = 36 
+c->memory[ 28] = 0 
+c->memory[ 29] = 0 
+c->memory[ 30] = 0 
+c->memory[ 31] = 0 
+c->memory[ 32] = 4 
+c->memory[ 33] = 16 
+c->memory[ 34] = 0 
+c->memory[ 35] = 255 
+c->memory[ 36] = 255 
+c->memory[ 37] = 0 
+c->memory[ 38] = 0 
+c->memory[ 39] = 26 
+c->memory[ 40] = 1 
+c->memory[ 41] = 0 
+c->memory[ 42] = 7 
+c->memory[ 43] = 195 
+c->memory[ 44] = 0 
+c->memory[ 45] = 0 
+c->memory[ 46] = 0 
+c->memory[ 47] = 0 
+c->memory[ 48] = 0 
+c->memory[ 49] = 0 
+c->memory[ 50] = 0 
+c->memory[ 51] = 0 
+c->memory[ 52] = 0 
+c->memory[ 53] = 0 
+c->memory[ 54] = 0 
+c->memory[ 55] = 0 
+c->memory[ 56] = 0 
+c->memory[ 57] = 0 
+c->memory[ 58] = 0 
+c->memory[ 59] = 0 
+c->memory[ 60] = 0 
+c->memory[ 61] = 0 
+c->memory[ 62] = 0 
+c->memory[ 63] = 0 
+c->memory[ 64] = 0 
+c->memory[ 65] = 0 
+c->memory[ 66] = 0 
+c->memory[ 67] = 0 
+c->memory[ 68] = 0 
+c->memory[ 69] = 0 
+c->memory[ 70] = 0 
+c->memory[ 71] = 0 
+c->memory[ 72] = 0 
+c->memory[ 73] = 0 
+c->memory[ 74] = 0 
+c->memory[ 75] = 0 
+c->memory[ 76] = 0 
+c->memory[ 77] = 0 
+c->memory[ 78] = 0 
+c->memory[ 79] = 0 
+c->memory[ 80] = 0 
+c->memory[ 81] = 0 
+c->memory[ 82] = 0 
+c->memory[ 83] = 0 
+c->memory[ 84] = 0 
+c->memory[ 85] = 0 
+c->memory[ 86] = 0 
+c->memory[ 87] = 0 
+c->memory[ 88] = 0 
+c->memory[ 89] = 0 
+c->memory[ 90] = 0 
+c->memory[ 91] = 0 
+c->memory[ 92] = 0 
+c->memory[ 93] = 0 
+c->memory[ 94] = 0 
+c->memory[ 95] = 0 
+c->memory[ 96] = 0 
+c->memory[ 97] = 0 
+c->memory[ 98] = 0 
+c->memory[ 99] = 0 
+c->pc value is 0 (c->itr+index )
+ if not c->itr+index : 57600
+ PC: 0000, State: 0006: Registers:
+ 0018 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 fffa
+std 
+r1:0	, r2:0	, op:0007	, pc:0	
+PC: 0002, State: 0006: Registers:
+ 0018 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 fffa
+loadi 24, r0
+r1:0	, r2:0	, op:0003	, pc:2	
+PC: 0006, State: 0006: Registers:
+ 0018 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 fffa
+push r0
+r1:0	, r2:0	, op:00e1	, pc:6	
+PC: 0008, State: 0006: Registers:
+ 0018 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 fff8
+trap 
+r1:0	, r2:0	, op:0043	, pc:8	
+PC: 000a, State: 0006: Registers:
+ 0018 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 fff8
+loadi 1000, r0
+r1:0	, r2:0	, op:0007	, pc:10	
+PC: 000e, State: 0006: Registers:
+ 03e8 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 fff8
+dec r0
+r1:0	, r2:0	, op:00e1	, pc:14	
+PC: 0010, State: 0006: Registers:
+ 03e7 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 fff8
+test r0, r0
+CPU ran out of time.

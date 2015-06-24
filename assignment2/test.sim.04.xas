@@ -1,0 +1,17 @@
+ #test.sim.04.xas test jump instruction,loadi instructions as well as test instructions
+ std
+ loadi Stack, r15
+ loadi 0, r0
+ loadi 1, r1
+ loadi 2, r2
+ test r1, r2
+ jmp j1
+
+j1:
+  jmp j2
+j2:
+  loadi 0x44, r3
+  out r3
+
+Stack:
+.literal 0

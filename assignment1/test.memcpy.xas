@@ -1,0 +1,40 @@
+.glob memcpy
+.glob main
+.glob printString
+main:
+  loadi 0x0200, r1
+  push r1
+  loadi hellostring, r0
+  push r0
+  loadi 14, r2
+  push r2
+  call memcpy
+  loadi 0x0200, r1
+  loadi 14, r2
+  loadi 0x0000, r4
+  push r4
+  push r3
+  jr printString
+  pop r2
+  pop r0
+  pop r1
+  ret
+
+printString:
+  loadb r1, r3
+  out r3
+  inc r1
+  dec r2
+  equ r2, r4
+  br done
+  jr printString
+
+done:
+  pop r4
+  pop r3
+  ret
+
+  
+  
+hellostring:
+.literal "Hello World!"

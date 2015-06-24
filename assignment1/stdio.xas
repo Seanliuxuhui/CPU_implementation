@@ -1,0 +1,61 @@
+.glob puts
+.glob memcpy
+puts:
+  push  r0             # save registers to be used
+  push  r1
+  mov   r15, r1        # save stack pointer
+  loadi 6, r0          # add 3 words to access params
+  add   r0, r1 
+  load  r1, r0         # load param into r0
+
+loop:                  # loop through string
+  loadb r0, r1         # load byte
+  test  r1, r1         # check if not nil byte
+  br    output         # if byte is not nil, branch to output
+  jr    done           # else branch to done
+output:
+  out   r1             # output byte
+  inc   r0             # increment pointer
+  jr    loop           # loop
+
+done:
+  loadi 0xa, r1        # output newline
+  out   r1             #  
+  pop   r1             # restore r1
+  pop   r0             # restore r0
+  ret                  # return
+
+memcpy:
+  push r3
+  push r4
+  loadi 0, r4
+  equ r0, r1
+  br finish
+  jr start
+
+
+start: 
+  equ r2, r4
+  br finish
+  jr move_content
+
+move_content:
+  loadb r0, r3
+  storb r3, r1
+  dec r2
+  inc r0
+  inc r1
+  jr start
+
+finish:
+ pop r4
+ pop r3
+ ret
+
+
+
+
+
+
+ 
+ 

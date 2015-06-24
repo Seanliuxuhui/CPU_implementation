@@ -1,0 +1,13 @@
+ # test.sim.05.xas test loadi operation and output the character 
+ std
+ loadi 1, r0
+ out r0
+ loadi -1, r0
+ out r0
+ loadi 0x33,r0
+ out r0
+ loadi 0x48,r0
+ out r0
+ loadi 0x55,r0
+ out r0
+ 

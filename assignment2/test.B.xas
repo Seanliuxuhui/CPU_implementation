@@ -1,0 +1,15 @@
+#test.B.xas have the exactly same implementation as goodbye.xas
+loadi testB, r0
+push r0
+loop: 
+   trap
+   loadi 500, r0
+wait:
+   dec r0
+   test r0, r0
+   br wait
+   jr loop
+.literal 0
+
+testB:
+    .literal "T"

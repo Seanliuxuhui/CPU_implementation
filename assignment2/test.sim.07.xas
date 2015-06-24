@@ -1,0 +1,16 @@
+#test.sim.07.xas tests the new implemented instructions trap
+
+loadi test_sim, r0
+push r0
+loop: 
+   trap
+   loadi 1000, r0
+wait:
+   dec r0
+   test r0, r0
+   br wait
+   jr loop
+.literal 0
+
+test_sim:
+    .literal "H"
