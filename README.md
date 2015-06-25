@@ -14,7 +14,7 @@ from source memory block to destination memory block.</p>
 Assignment 2 envolves with 5 more instructions that deals with interrupt calls. They are cli, trap and other 3 instructions. 
 Now when running './xsim 10000(arbitary rounds) .xo file or executable file 1000 (number of interrupts)', the output will be determined 
 by the executable file. If, for instances, you use command ./xsmkos xos kernel.xo yello.xo zello.xo hello.xo goodbye.xo, you will have 
-four programs running at the same time, which means the output will be 4 types of printing out <a href="http://web.cs.dal.ca/~xuhui/os_output.txt">Result<a>.(for example yello.xo is designated to print out the 'Y')
+four programs running at the same time, which means that the output will be 4 different characters printed out interleaved. <a href="http://web.cs.dal.ca/~xuhui/os_output.txt">Result<a>.(for example yello.xo is designated to print out the 'Y')
 Trap handler is also implemented in the kernel.xas and meant to deal with the trap call. 
 </p>
 
